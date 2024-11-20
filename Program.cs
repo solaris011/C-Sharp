@@ -6,16 +6,10 @@ namespace School
     {
         static void Main(string[] args)
         {
-            Initialize();
-        }
-
-        static void Initialize()
-        {
             int examAssignments = 5;
 
             // Students and their scores
-            string[] studentNames = { "Sophia", "Andrew", "Emma", "Logan", 
-                    "Becky", "Chris", "Eric", "Gregor" };
+            string[] studentNames = { "Sophia", "Andrew", "Emma", "Logan", "Becky", "Chris", "Eric", "Gregor" };
             int[][] studentScores = {
                 new int[] { 90, 86, 87, 98, 100, 94, 90 },
                 new int[] { 92, 89, 81, 96, 90, 89 },
@@ -27,7 +21,13 @@ namespace School
                 new int[] { 91, 91, 91, 91, 91, 91, 91 }
             };
 
+            GenerateReport(studentNames, studentScores, examAssignments);
+        }
+
+        static void GenerateReport(string[] studentNames, int[][] studentScores, int examAssignments)
+        {
             Console.WriteLine("Student\t\tGrade\n");
+
             for (int i = 0; i < studentNames.Length; i++)
             {
                 string name = studentNames[i];
