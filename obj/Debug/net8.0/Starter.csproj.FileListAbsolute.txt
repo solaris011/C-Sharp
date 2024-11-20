@@ -1,0 +1,15 @@
+C:\projects\CsharpProjects\Projecto1\bin\Debug\net8.0\Starter.exe
+C:\projects\CsharpProjects\Projecto1\bin\Debug\net8.0\Starter.deps.json
+C:\projects\CsharpProjects\Projecto1\bin\Debug\net8.0\Starter.runtimeconfig.json
+C:\projects\CsharpProjects\Projecto1\bin\Debug\net8.0\Starter.dll
+C:\projects\CsharpProjects\Projecto1\bin\Debug\net8.0\Starter.pdb
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.AssemblyInfoInputs.cache
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.AssemblyInfo.cs
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.csproj.CoreCompileInputs.cache
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.sourcelink.json
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.dll
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\refint\Starter.dll
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.pdb
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\Starter.genruntimeconfig.cache
+C:\projects\CsharpProjects\Projecto1\obj\Debug\net8.0\ref\Starter.dll

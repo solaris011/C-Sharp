@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net8.0": []
   },
   "packageFolders": {
     "C:\\Users\\solar\\.nuget\\packages\\": {},
@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\CsharpProjects\\Projecto1\\Projecto1.csproj",
-      "projectName": "Projecto1",
-      "projectPath": "C:\\projects\\CsharpProjects\\Projecto1\\Projecto1.csproj",
+      "projectUniqueName": "C:\\projects\\CsharpProjects\\Projecto1\\Starter.csproj",
+      "projectName": "Starter",
+      "projectPath": "C:\\projects\\CsharpProjects\\Projecto1\\Starter.csproj",
       "packagesPath": "C:\\Users\\solar\\.nuget\\packages\\",
       "outputPath": "C:\\projects\\CsharpProjects\\Projecto1\\obj\\",
       "projectStyle": "PackageReference",
@@ -29,14 +29,14 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -53,8 +53,8 @@
       "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
