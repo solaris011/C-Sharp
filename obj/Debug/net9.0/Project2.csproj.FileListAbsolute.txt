@@ -1,0 +1,15 @@
+C:\projects\CsharpProjects\Project2\bin\Debug\net9.0\Project2.exe
+C:\projects\CsharpProjects\Project2\bin\Debug\net9.0\Project2.deps.json
+C:\projects\CsharpProjects\Project2\bin\Debug\net9.0\Project2.runtimeconfig.json
+C:\projects\CsharpProjects\Project2\bin\Debug\net9.0\Project2.dll
+C:\projects\CsharpProjects\Project2\bin\Debug\net9.0\Project2.pdb
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.AssemblyInfoInputs.cache
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.AssemblyInfo.cs
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.csproj.CoreCompileInputs.cache
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.sourcelink.json
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.dll
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\refint\Project2.dll
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.pdb
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\Project2.genruntimeconfig.cache
+C:\projects\CsharpProjects\Project2\obj\Debug\net9.0\ref\Project2.dll

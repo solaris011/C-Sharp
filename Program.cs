@@ -10,53 +10,68 @@ namespace School
 
             // Students and their scores
             string[] studentNames = { "Sophia", "Andrew", "Emma", "Logan", "Becky", "Chris", "Eric", "Gregor" };
-            int[][] studentScores = {
-                new int[] { 90, 86, 87, 98, 100, 94, 90 },
-                new int[] { 92, 89, 81, 96, 90, 89 },
-                new int[] { 90, 85, 87, 98, 68, 89, 89, 89 },
-                new int[] { 90, 95, 87, 88, 96, 96 },
-                new int[] { 92, 91, 90, 91, 92, 92, 92 },
-                new int[] { 84, 86, 88, 90, 92, 94, 96, 98 },
-                new int[] { 80, 90, 100, 80, 90, 100, 80, 90 },
-                new int[] { 91, 91, 91, 91, 91, 91, 91 }
-            };
+            decimal[][] studentScores = [
+                [ 90, 86, 87, 98, 100, 94, 90 ],
+                [ 92, 89, 81, 96, 90, 89 ],
+                [ 90, 85, 87, 98, 68, 89, 89, 89 ],
+                [ 90, 95, 87, 88, 96, 96 ],
+                [ 92, 91, 90, 91, 92, 92, 92 ],
+                [ 84, 86, 88, 90, 92, 94, 96, 98 ],
+                [ 80, 90, 100, 80, 90, 100, 80, 90 ],
+                [ 91, 91, 91, 91, 91, 91, 91 ]
+            ];
 
             GenerateReport(studentNames, studentScores, examAssignments);
         }
 
-        static void GenerateReport(string[] studentNames, int[][] studentScores, int examAssignments)
+        static void GenerateReport(string[] studentNames, decimal[][] studentScores, int examAssignments)
         {
-            Console.WriteLine("Student\t\tGrade\n");
+            Console.WriteLine("Student\t\tExam Score\tOverall Grade\tExtra Credit\n");
 
             for (int i = 0; i < studentNames.Length; i++)
             {
                 string name = studentNames[i];
-                int[] scores = studentScores[i];
+                decimal[] scores = studentScores[i];
 
-                decimal averageGrade = CalculateGrade(scores, examAssignments);
-                string letterGrade = DetermineLetterGrade(averageGrade);
+                decimal[] scoresAverages = CalculateGrade(scores, examAssignments);
+                string letterGrade = DetermineLetterGrade(scoresAverages[1]);
 
-                PrintStudentGrade(name, averageGrade, letterGrade);
+                PrintStudentGrade(name, scoresAverages, letterGrade);
             }
         }
 
-        static decimal CalculateGrade(int[] scores, int examAssignments)
+        static decimal[] CalculateGrade(decimal[] scores, int examAssignments)
         {
-            int sumAssignmentScores = 0;
+            decimal examAvgScore = 0;
+            decimal overallGradeScore = 0;
+            int extraCreditAvg = 0;
+            //decimal extraCreditPoints = 0;
             int gradedAssignments = 0;
+            decimal[] scoresAvg = new decimal[4];
 
-            foreach (int score in scores)
+            foreach (decimal score in scores)
             {
                 gradedAssignments++;
-                if (gradedAssignments <= examAssignments)
-                    sumAssignmentScores += score;
+                if (gradedAssignments <= examAssignments) 
+                {
+                    examAvgScore += score;
+                    overallGradeScore += score;
+                }
                 else
-                    sumAssignmentScores += score / 10;
+                {
+                    extraCreditAvg += (int)score;
+                    overallGradeScore += score / 10;
+                }
             }
 
-            return (decimal)sumAssignmentScores / examAssignments;
-        }
+            scoresAvg[0] = examAvgScore / examAssignments;
+            scoresAvg[1] = overallGradeScore / examAssignments;
+            scoresAvg[2] = extraCreditAvg / (scores.Length - examAssignments);
+            scoresAvg[3] = scoresAvg[1] - scoresAvg[0];
 
+            return scoresAvg;
+        }
+        
         static string DetermineLetterGrade(decimal grade)
         {
             return grade switch
@@ -75,11 +90,11 @@ namespace School
                 >= 60 => "D-",
                 _ => "F"
             };
-        }
+        }       
 
-        static void PrintStudentGrade(string name, decimal averageGrade, string letterGrade)
+        static void PrintStudentGrade(string name, decimal[] scoreAvgs, string letterGrade)
         {
-            Console.WriteLine($"{name}\t\t{averageGrade:F2}\t{letterGrade}");
+            Console.WriteLine($"{name}\t\t{scoreAvgs[0]:F1}\t\t{scoreAvgs[1]:F2}\t{letterGrade}\t{scoreAvgs[2]} ({scoreAvgs[3]:F2} pts)");
         }
     }
 }

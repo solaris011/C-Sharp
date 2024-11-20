@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xN7c+rcQKo4=",
   "success": true,
   "projectFilePath": "C:\\projects\\CsharpProjects\\Projecto1\\Starter.csproj",
+=======
+  "dgSpecHash": "dxazwembK/8=",
+  "success": true,
+  "projectFilePath": "C:\\projects\\CsharpProjects\\Project2\\Project2.csproj",
+>>>>>>> a4431c6 (1a ver)
   "expectedPackageFiles": [],
   "logs": []
 }
